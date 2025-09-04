@@ -1,5 +1,7 @@
 # Atividade de VISÃO GERAL DE CONTAINERIZAÇÃO
 
+
+
 ### **Imagem**
 Uma **imagem Docker** é um arquivo que funciona como um template imutável para criarmos um container Docker. Ela contém tudo o que uma aplicação precisa para rodar: o código fonte, bibliotecas, dependências e configurações de ambiente necessárias.
 
@@ -11,6 +13,8 @@ docker pull ubuntu:20.04
 # Lista imagens baixadas
 docker images
 ```
+
+
 
 ### **Container**
 
@@ -29,6 +33,8 @@ docker ps
 # Lista todos os containers (inclusive os que não estão rodando)
 docker ps -a
 ```
+
+
 
 ### **Dockerfile**
 
@@ -51,6 +57,8 @@ EXPOSE 3000
 #comando final que roda a aplicação
 CMD ["node", "app.js"]
 ```
+
+
 
 ### **Docker Compose**
 
@@ -82,6 +90,24 @@ services:
     ports:
       - "5432:5432"   # expõe a porta 5432 do container na porta 5432 do host
 ```
+
+- Para orquestrarmos sistemas completos, o ideal seria utilizar **Kubernetes**.
+
+
+
+**Fontes**
+
+https://www.youtube.com/watch?v=pg19Z8LL06w
+
+https://www.youtube.com/watch?v=DQdB7wFEygo
+
+https://medium.com/@JeffyJeff/the-beginners-guide-to-docker-fa4c4d3181e7
+
+https://medium.com/@techsuneel99/docker-from-beginner-to-expert-a-comprehensive-tutorial-5efec10c82ab
+https://www.geeksforgeeks.org/devops/docker-tutorial/
+(esses dois últimos utilizei como referências para comandos e afins após uma leitura superficial)
+
+
 
 
 
