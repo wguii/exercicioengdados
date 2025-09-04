@@ -11,7 +11,8 @@ ENV SA_PASSWORD=senha123
 WORKDIR /scripts
 
 # Copia o arquivo SQL para dentro da imagem
-COPY create_ddl_dml.sql /scripts/ #/ no final para o Docker Engine saber que precisa criar o diretório caso não exista!
+COPY create_ddl_dml.sql /scripts/
+# "/" no final para o Docker Engine saber que precisa criar o diretório caso não exista!
 
 # Copia um script de inicialização para rodar o SQL
 COPY init.sh /scripts/
