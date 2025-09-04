@@ -91,7 +91,7 @@ services:
       - "5432:5432"   # expõe a porta 5432 do container na porta 5432 do host
 ```
 
-- Para orquestrarmos sistemas completos, o ideal seria utilizar **Kubernetes**.
+- Para orquestrarmos sistemas complexos e de grande escala, o ideal seria utilizar **Kubernetes**.
 
 
 
