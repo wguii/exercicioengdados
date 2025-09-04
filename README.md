@@ -94,7 +94,8 @@ services:
 - Para orquestrarmos sistemas complexos e de grande escala, o ideal seria utilizar **Kubernetes**.
 
 
-**Exemplo**
+### **Exemplo**
+
 Quis trazer um exemplo de um projeto pessoal que tive de utilizar Docker para dar deploy no Render, uma plataforma cloud.
 
 Este projeto era um chatbot criado utilizando Python e tive que especificar no Dockerfile a instalação do FFMPEG (um handler a nível de CLI de aúdio e vídeo) para rodar uma funcionalidade que streamava música, tive que instalar de maneira system-wide utilizando RUN apt-get (Dockerfile abaixo)
